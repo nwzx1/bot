@@ -1,10 +1,9 @@
-fn main() {
-    let rng: i32 = 5;
+pub mod structures;
+use structures::strcture::{Pettern, Perem};
 
-    for _j in 1..rng {
-        for _i in 1.._j + 1 {
-            print!("//\\\\");
-        }
-        println!();
-    }
+fn main() {
+    Pettern::PETTERN_OF_kiteTringle(Perem { 
+        to: 1,
+        end: 10 
+    })
 }
