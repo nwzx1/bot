@@ -1,9 +1,6 @@
 pub mod structures;
-use structures::strcture::{Pettern, Perem};
+use structures::strcture::{Perem, Pettern};
 
 fn main() {
-    Pettern::pettern_of_arrowup_tringle(Perem { 
-        to: 1,
-        end: 20 
-    })
+    Pettern::pettern_of_number_formal_kite_tringle(Perem { to: 0, end: 9 })
 }
