@@ -83,7 +83,7 @@ pub mod strcture {
                     print!("{} ", _j + 1);
                 }
                 for _j in per.to..i {
-                    print!("{} ", _j +1 );
+                    print!("{} ", _j + 1);
                 }
                 println!()
             }
@@ -92,31 +92,30 @@ pub mod strcture {
         pub fn pettern_of_number_formal_kite_tringle(per: Perem) {
             for i in per.to..per.end {
                 for _j in i..per.end {
-                    print!("  ");
+                    print!("   ");
                 }
                 for _j in per.to..i {
-                    print!("{} ",_j);
+                    print!("{}  ", _j);
                 }
                 for _j in per.to..i - 1 {
-                    print!("{} ",_j);
+                    print!("{}  ", _j);
                 }
                 println!()
             }
             for i in per.to..per.end {
+                let mut p = per.end -1;
                 for _j in per.to..i {
-                    print!("  ");
+                    print!("   ");
                 }
                 for _j in i..per.end {
-                    print!("{} ",_j);
+                    print!("{}  ", _j);
                 }
                 for _j in i..per.end - 1 {
-                    print!("{} ",_j);
+                    p = p + 1;
+                    print!("{} ", p);
                 }
                 println!()
             }
         }
-
-
-        
     }
 }
